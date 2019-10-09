@@ -1,10 +1,11 @@
 from flask import Flask
+from flask import render_template
 
 app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return "hello workd"
+    return render_template('index.html', pageTitle= 'My Calculator')
 
 @app.route('/alexis')
 def alexis():
