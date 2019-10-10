@@ -18,8 +18,7 @@ def calculate():
         DiscountFactor2 = (((1+i)**n)*i)
         calculate = '${:,.2f}'.format(Decimal(A(DiscountFactor1/DiscountFactor2)))
         return render_template('index.html', display=calculate, pageTitle="My Loan Calculator")
-
-print(calculate)
+        print(calculate)
 
     return redirect("/")
 if __name__ == '__main__':
