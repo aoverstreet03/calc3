@@ -2,6 +2,23 @@
 
 {% block body %}
 
-	<h2> Hello Alexis!!! </h2>
+<form method="post">
+  <table>
+    <tr>
+      <td> Loan amount(A): </td> <td> <input type = "text" name="A" /> </td>
+    </tr>
+    <tr>
+      <td> Number of payments(n): </td> <td> <input type = "text" name="n" /> </td>
+    </tr>
+    <tr>
+      <td>Interest rate(i): </td> <td> <input type = "text" name="i"/> </td>
+    </tr>
+  </table>
+    <br>
+  <input class="button" type="submit" formaction="/calculate" value="Calculate Loan Payment" />
+</form>
+
+<p> {{display}} </p>
+<div style="clear:both;"></div>
 
 {% endblock %}
