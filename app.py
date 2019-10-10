@@ -19,6 +19,8 @@ def calculate():
         calculate = '${:,.2f}'.format(Decimal(A(DiscountFactor1/DiscountFactor2)))
         return render_template('index.html', display=calculate, pageTitle="My Loan Calculator")
 
+print(calculate)
+
     return redirect("/")
 if __name__ == '__main__':
     app.run(debug=True)
