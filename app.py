@@ -12,7 +12,7 @@ def calculate():
     if request.method == 'POST':
         form = request.form
         A = int(form['A'])
-        i = Decimal(form['i'])
+        i = (form['i'])
         n= int(form['n'])
         DiscountFactor1 =(((1+i)**n)-1)
         DiscountFactor2 = (((1+i)**n)*i)
