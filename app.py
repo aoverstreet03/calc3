@@ -14,7 +14,7 @@ def calculate():
         A = int(form['A'])
         i = (form['i'])
         n= int(form['n'])
-        DiscountFactor1 =(((1+i)**n)-1)
+        DiscountFactor1 =((1+i)**n)-1
         DiscountFactor2 = (((1+i)**n)*i)
         calculate = '${:,.2f}'.format(Decimal(A(DiscountFactor1/DiscountFactor2)))
         return render_template('index.html', display=calculate, pageTitle='My Loan Calculator')
